@@ -1,0 +1,21 @@
+services:
+  client:
+    image: nginx
+    ports:
+      - 8000:80
+    volumes:
+      - ./static:/usr/share/nginx/html
+      - ./nginx:/etc/nginx
+    depends_on:
+      - backend
+      - app
+
+  backend:
+    build: ./backend
+    expose:
+      - 5000
+
+  app:
+    build: ./app
+    expose:
+      - 5173
