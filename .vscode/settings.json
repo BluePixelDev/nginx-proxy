@@ -1,0 +1,6 @@
+{
+    "markdown.marp.themes": [
+        "presentation/neobeam.css",
+        "presentation/neobeam-ecobeam.css"
+    ]
+}
