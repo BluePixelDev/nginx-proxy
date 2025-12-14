@@ -8,15 +8,26 @@ footer: "**Prostředí Webu**
 
 <!-- _class: title -->
 
-# Prostředí Webu <br> Ukázka aplikace proxy serveru pomoci Nginx
+# Ukázka aplikace proxy serveru pomoci Nginx
 
-## Jaroslav Štěpán, Ondřej Kačírek, Daniala Hušková
+## Jaroslav Štěpán, Ondřej Kačírek, Daniela Hušková
 
 ### 18.12.2025
 
 ---
 
-<!-- header: 'Úvod do NGINX' -->
+<!-- header: 'Obsah' -->
+
+1. Co je **NGINX**
+2. Proxy
+3. Ukázka
+4. Zdroje
+
+---
+
+<!-- header: 'NGINX' -->
+
+# NGINX
 
 - Vysoce výkonný bezplatný webový server, reverzní proxy a load balancer.
 - Navržený pro vysokou propustnost, nízkou paměťovou náročnost a práci s velkým počtem souběžných spojení (ruský programátor Igor Sysoev, rok 2004)
@@ -25,4 +36,39 @@ footer: "**Prostředí Webu**
 
 ---
 
-<!-- header: 'Proxy Server' -->
+<!-- header: 'Proxy' -->
+
+# Proxy
+
+- Zástupce / Prostředník
+- Jedná jménem jiné osoby, systému nebo služby
+- Rozděluje se na:
+  - **Forward**
+  - **Reverse**
+
+---
+
+<!-- header: 'Proxy: Forward' -->
+
+# Forward
+
+- Mezi klientem a internetem
+- Klient → Proxy → Internet
+- **Použití**: Filtrace, Anonymizace, Bezpečnost
+
+---
+
+<!-- header: 'Proxy: Reverse' -->
+
+# Reverse
+
+- Mezi klientem a backend serverem
+- Klient → Reverse Proxy → Aplikační / Backend Server
+- **Použití**: Load Balancing, Cache, TLS terminace, Bezpečnost
+
+---
+
+<!-- header: 'Zdroje' -->
+<!-- _class: 'top' --->
+
+- https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/
