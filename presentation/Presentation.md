@@ -68,6 +68,42 @@ footer: "**Prostředí Webu**
 
 ---
 
+<!-- header: 'Architektura NGINX' -->
+
+# Architektura NGINX
+
+- EDA (event driven architecture) → neblokující a asynchronní
+- klíčový pro spravování vícero připojení najednou
+
+---
+
+<!-- header: 'nginx.conf' -->
+
+# Ukázka nginx.conf
+
+```ruby
+# Global settings
+
+events {
+    worker_connections 1024;
+}
+
+http {
+include       mime.types;
+    server {
+        listen 80;
+        server_name localhost;
+
+        location / {
+            root html;
+            index index.html;
+        }
+    }
+}
+
+```
+
+
 <!-- header: 'Zdroje' -->
 <!-- _class: 'top' --->
 
