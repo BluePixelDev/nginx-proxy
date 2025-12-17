@@ -77,34 +77,19 @@ footer: "**Prostředí Webu**
 
 ---
 
-<!-- header: 'nginx.conf' -->
+<!-- header: 'Ukázka' -->
 
-# Ukázka nginx.conf
+# Použijeme Docker
 
-```ruby
-# Global settings
+- Software pro kontejnirazi prostředí ("odlehčená virtualizace")
+- **MacOS**, **Windows**, **Linux**
 
-events {
-    worker_connections 1024;
-}
+## ![w:400](media/docker_logo.png)
 
-http {
-include       mime.types;
-    server {
-        listen 80;
-        server_name localhost;
-
-        location / {
-            root html;
-            index index.html;
-        }
-    }
-}
-
-```
-
+---
 
 <!-- header: 'Zdroje' -->
 <!-- _class: 'top' --->
 
 - https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/
+- https://docs.docker.com/compose/gettingstarted
