@@ -20,6 +20,8 @@ footer: "**Prostředí Webu**
 
 1. Co je **NGINX**
 2. Proxy
+   1. Forward
+   2. Reverse
 3. Ukázka
 4. Zdroje
 
@@ -29,10 +31,10 @@ footer: "**Prostředí Webu**
 
 # NGINX
 
-- Vysoce výkonný bezplatný webový server, reverzní proxy a load balancer.
+- Vysoce výkonný bezplatný **webový server**, **reverzní proxy** a **load balancer**.
 - Navržený pro vysokou propustnost, nízkou paměťovou náročnost a práci s velkým počtem souběžných spojení (ruský programátor Igor Sysoev, rok 2004)
-- Použití: webhosting, API brány, CDN, microservices, reverse proxy vrstva.
-- Napsán s cílem překonat webový server Apache
+- **Použití**: webhosting, API brány, CDN, microservices, reverse proxy vrstva.
+- Napsán s cílem překonat webový server **Apache**
 
 ---
 
@@ -68,20 +70,10 @@ footer: "**Prostředí Webu**
 
 ---
 
-<!-- header: 'Architektura NGINX' -->
-
-# Architektura NGINX
-
-- EDA (event driven architecture) → neblokující a asynchronní
-- klíčový pro spravování vícero připojení najednou
-
----
-
 <!-- header: 'Ukázka' -->
 
-# Použijeme Docker
-
-- Software pro kontejnirazi prostředí ("odlehčená virtualizace")
+- **Docker**
+- Software pro kontejnirizaci prostředí ("odlehčená virtualizace")
 - **MacOS**, **Windows**, **Linux**
 
 ## ![w:400](media/docker_logo.png)
